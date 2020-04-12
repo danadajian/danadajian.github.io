@@ -1,0 +1,6 @@
+.Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+    min-height: 5vh;
+}
