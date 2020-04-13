@@ -8,7 +8,7 @@ export const Resume = () => {
         <div className="Resume">
             <Navbar/>
             <header className="Resume-header">
-                <h1>Resume</h1>
+                <h1>Résumé</h1>
             </header>
             <iframe className="Resume-object" title={'Resume'} src={GOOGLE_DOCS_EMBED_LINK_FOR_RESUME}/>
         </div>

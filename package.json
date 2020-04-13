@@ -19,8 +19,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rsync -r --exclude build/*precache-manifest* ./build/. .",
-    "test": "react-scripts test --watchAll=false",
+    "build": "react-scripts build && rsync -r --exclude '*.js*' ./build/. .",
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
