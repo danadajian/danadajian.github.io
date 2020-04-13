@@ -5,11 +5,12 @@ import {Navbar} from '../Navbar/Navbar';
 
 const chicagoSkyline = require('../../images/chicago.jpg');
 
-export const Home = () => {
+export const Home = (props: {selectedButton: string, changeSelectedButton: any}) => {
+    const {selectedButton, changeSelectedButton} = props;
     return (
         <div className="Home">
-            <Navbar/>
-            <header className="Home-header">
+            <header className="Overlay">
+                <Navbar selectedButton={selectedButton} changeSelectedButton={changeSelectedButton}/>
                 <h1>Dan Adajian</h1>
                 <p>
                     Welcome to my site! I'm a software developer from Chicago, IL.
