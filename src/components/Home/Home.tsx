@@ -3,6 +3,8 @@ import '../../App.css';
 import './Home.css';
 import {Navbar} from '../Navbar/Navbar';
 
+const chicagoSkyline = require('../../images/chicago.jpg');
+
 export const Home = () => {
     return (
         <div className="Home">
@@ -13,6 +15,7 @@ export const Home = () => {
                     Welcome to my site! I'm a software developer from Chicago, IL.
                 </p>
             </header>
+            <img src={chicagoSkyline} alt='chicago'/>
         </div>
     );
 };
