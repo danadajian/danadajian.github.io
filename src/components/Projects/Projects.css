@@ -1,0 +1,20 @@
+.Projects p {
+    text-align: left;
+}
+
+.Projects a {
+    color: white;
+}
+
+.Projects section:nth-child(even) {
+    background: #95a5a6;
+    overflow: auto;
+}
+
+.Projects div {
+    margin: 5vh 15%;
+}
+
+.Projects img {
+    max-width: 100%;
+}

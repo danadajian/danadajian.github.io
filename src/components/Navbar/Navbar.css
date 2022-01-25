@@ -1,0 +1,54 @@
+.Navbar {
+    position: fixed;
+    top: 5vh;
+    left: 3vh;
+    display: flex;
+    font-size: calc(4px + 2vmin);
+}
+
+.Navbar a {
+    padding: 1em 2em;
+    border-bottom: 3px solid #bdc3c7;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 1vh;
+    text-decoration: none;
+}
+
+.Navbar a:hover {
+    background: #95a5a6;
+    color: #fff;
+    border-color: #7f8c8d;
+}
+
+.Selected {
+    background: #95a5a6;
+    color: #fff;
+    border-color: #7f8c8d;
+}
+
+.Unselected {
+    background: #ecf0f1;
+    color: black;
+}
+
+.Resume:hover .Resume-dropdown {
+    display: flex;
+    background: #ecf0f1;
+    color: black;
+}
+
+.Resume-dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 4em;
+    font-size: calc(1px + 2vmin);
+}
+
+#download-pdf:hover {
+    background: #95a5a6;
+    color: #fff;
+    border-color: #7f8c8d;
+}
