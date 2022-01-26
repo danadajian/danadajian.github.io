@@ -6,7 +6,7 @@ import { RESUME_DOWNLOAD_LINK } from '../../constants';
 export const Navbar = (props: { initialState: string }) => {
   const [selectedButton] = React.useState(props.initialState);
 
-  const classNames: any = {
+  const classNames: { [key: string]: string } = {
     Home: 'Unselected',
     About: 'Unselected',
     Resume: 'Unselected',

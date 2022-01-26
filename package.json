@@ -33,7 +33,8 @@
       "github/no-then": "off",
       "import/no-namespace": "off",
       "import/no-unresolved": "off",
-      "filenames/match-regex": "off"
+      "filenames/match-regex": "off",
+      "@typescript-eslint/no-explicit-any": "error"
     },
     "ignorePatterns": [
       "*.css",
