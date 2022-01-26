@@ -1,7 +1,7 @@
 import './Navbar.css';
+import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { RESUME_DOWNLOAD_LINK } from '../../constants';
-import * as React from 'react';
 
 export const Navbar = (props: { initialState: string }) => {
   const [selectedButton] = React.useState(props.initialState);
