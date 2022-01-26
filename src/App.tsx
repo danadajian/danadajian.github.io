@@ -1,20 +1,24 @@
 import * as React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { About } from './components/About/About';
 import { Home } from './components/Home/Home';
 import { Projects } from './components/Projects/Projects';
 import { Resume } from './components/Resume/Resume';
-import { ScrollToTop } from './ScrollToTop';
+import { useEffect } from 'react';
 
 export const App = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
-    <ScrollToTop>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
-    </ScrollToTop>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/resume" element={<Resume />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
   );
 };
