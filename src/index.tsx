@@ -2,11 +2,12 @@ import './index.css';
 import * as React from 'react';
 import { App } from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-render(
+const root = createRoot(document.getElementById('root')!);
+
+root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </BrowserRouter>
 );
