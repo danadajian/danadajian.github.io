@@ -12,7 +12,7 @@ export const Resume = () => {
       </div>
       <div className="Container">
         <div className="Resume">
-          <iframe title={'Resume'} src={GOOGLE_DOCS_EMBED_LINK_FOR_RESUME} scrolling="no" />
+          <iframe title={'Resume'} src={GOOGLE_DOCS_EMBED_LINK_FOR_RESUME} />
         </div>
       </div>
       <Links />

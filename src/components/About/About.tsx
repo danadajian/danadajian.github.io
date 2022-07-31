@@ -27,33 +27,6 @@ export const About = () => {
               </p>
             </div>
           </section>
-          <section>
-            <div>
-              <h3>Professional Experience</h3>
-              <ul>
-                <li>Data pipeline architecture using the AWS serverless application model</li>
-                <li>Leveraging AWS Lambda and Batch to productionalize machine learning models</li>
-                <li>Full-stack .NET web application development using MVC framework</li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <div>
-              <h3>Education</h3>
-              <ul>
-                <li>Graduated from Northwestern University with a Bachelor's Degree in Math and Economics</li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <div>
-              <h3>Interests</h3>
-              <ul>
-                <li>I play golf when it's over 40 degrees out, and paddle tennis otherwise.</li>
-                <li>I enjoy watching football, playing the piano, and building software!</li>
-              </ul>
-            </div>
-          </section>
         </div>
       </div>
       <Links />
