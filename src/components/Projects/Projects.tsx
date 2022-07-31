@@ -1,7 +1,6 @@
 import './Projects.css';
 import * as React from 'react';
 import { GITHUB_LINK } from '../../constants';
-import DfsOptimizerExample from '../../images/dfs-optimizer-example.png';
 import { Links } from '../Links/Links';
 import { Navbar } from '../Navbar/Navbar';
 
