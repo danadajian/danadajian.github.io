@@ -1,17 +1,16 @@
-import './Blog.css';
+import './Blogs.css';
 import * as React from 'react';
 import { Links } from '../Links/Links';
 import { Navbar } from '../Navbar/Navbar';
 import ReactMarkdown from 'react-markdown';
 import { Link, useSearchParams } from 'react-router-dom';
-import Test from './Test.md';
-import Test2 from './Test2.md';
 import { getTitleFromMarkdown } from '../../utils/getMarkdownTitle';
 import { kebabCase } from 'lodash';
+import Test from './Test.md';
 
-const BLOGS = [Test, Test2];
+const BLOGS = [Test];
 
-export const Blog = () => {
+export const Blogs = () => {
   const [searchParams] = useSearchParams();
   const titleParam = searchParams.get('title');
   const [currentBlog, setCurrentBlog] = React.useState<string>();
@@ -28,7 +27,7 @@ export const Blog = () => {
   return (
     <>
       <div className="Header">
-        <Navbar initialState={'Blog'} />
+        <Navbar initialState={'Blogs'} />
       </div>
       <div className="Container">
         {titleParam ? <BlogPost blog={blogToRender} /> : <BlogLinks blogs={blogs} setCurrentBlog={setCurrentBlog} />}
@@ -39,27 +38,28 @@ export const Blog = () => {
 };
 
 const BlogPost = ({ blog }: { blog?: string }) => {
+  if (!blog) {
+    return null;
+  }
+
   return (
     <>
-      <Link to="/blog">Back to Blogs</Link>
-      {blog && <ReactMarkdown children={blog} />}
+      <ReactMarkdown children={blog} />
     </>
   );
 };
 
 const BlogLinks = ({ blogs, setCurrentBlog }: { blogs?: string[]; setCurrentBlog: (blog: string) => void }) => (
-  <div className="Blog">
+  <>
     {blogs?.map(blog => {
       const title = getTitleFromMarkdown(blog);
       return (
         <section>
-          {
-            <Link to={`/blog?title=${kebabCase(title)}`} onClick={() => setCurrentBlog(blog)}>
-              {title}
-            </Link>
-          }
+          <Link to={`/blogs?title=${kebabCase(title)}`} onClick={() => setCurrentBlog(blog)}>
+            {title}
+          </Link>
         </section>
       );
     })}
-  </div>
+  </>
 );
