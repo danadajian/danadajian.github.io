@@ -1,24 +1,24 @@
 .About p {
-    text-align: left;
+  text-align: left;
 }
 
 .About li {
-    text-align: left;
+  text-align: left;
 }
 
 .About a {
-    color: white;
+  color: white;
 }
 
 .About h3 {
-    text-align: left;
+  text-align: left;
 }
 
 .About div {
-    margin: 5% 15%;
+  margin: 5% 15%;
 }
 
 .About img {
-    width: 40vh;
-    height: 40vh;
+  width: 40vh;
+  height: 40vh;
 }

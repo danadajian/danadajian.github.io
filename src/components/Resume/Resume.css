@@ -1,9 +1,9 @@
 .Resume {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Resume iframe {
-    height: 1000px;
-    width: 850px;
+  height: 1000px;
+  width: 850px;
 }

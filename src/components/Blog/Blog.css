@@ -1,20 +1,20 @@
 .Blog p {
-    text-align: left;
+  text-align: left;
 }
 
 .Blog a {
-    color: white;
+  color: white;
 }
 
 .Blog section:nth-child(even) {
-    background: #95a5a6;
-    overflow: auto;
+  background: #95a5a6;
+  overflow: auto;
 }
 
 .Blog div {
-    margin: 5vh 15%;
+  margin: 5vh 15%;
 }
 
 .Blog img {
-    max-width: 100%;
+  max-width: 100%;
 }
