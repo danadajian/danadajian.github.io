@@ -26,8 +26,8 @@ export const Navbar = (props: { initialState: string }) => {
           Download PDF
         </a>
       </div>
-      <Link className={classNames.Projects ?? 'Unselected'} to="/projects">
-        Projects
+      <Link className={classNames.Blog ?? 'Unselected'} to="/blog">
+        Blog
       </Link>
     </div>
   );
