@@ -1,20 +1,20 @@
-.Projects p {
+.Blog p {
     text-align: left;
 }
 
-.Projects a {
+.Blog a {
     color: white;
 }
 
-.Projects section:nth-child(even) {
+.Blog section:nth-child(even) {
     background: #95a5a6;
     overflow: auto;
 }
 
-.Projects div {
+.Blog div {
     margin: 5vh 15%;
 }
 
-.Projects img {
+.Blog img {
     max-width: 100%;
 }
