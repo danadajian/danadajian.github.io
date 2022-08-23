@@ -44,7 +44,7 @@ const BlogPost = ({ blog }: { blog?: string }) => {
 
   return (
     <>
-      <ReactMarkdown children={blog} />
+      <ReactMarkdown children={blog} className="Blog" />
     </>
   );
 };
@@ -54,11 +54,11 @@ const BlogLinks = ({ blogs, setCurrentBlog }: { blogs?: string[]; setCurrentBlog
     {blogs?.map(blog => {
       const title = getTitleFromMarkdown(blog);
       return (
-        <section>
+        <h2>
           <Link to={`/blogs?title=${kebabCase(title)}`} onClick={() => setCurrentBlog(blog)}>
             {title}
           </Link>
-        </section>
+        </h2>
       );
     })}
   </>

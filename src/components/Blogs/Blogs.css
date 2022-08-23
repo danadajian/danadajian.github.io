@@ -1,3 +1,10 @@
 section {
   margin-bottom: 10vh;
 }
+
+.Blog {
+  font-size: calc(2px + 2vmin);
+  text-align: left;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
