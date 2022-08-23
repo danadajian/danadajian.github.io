@@ -6,9 +6,9 @@ import ReactMarkdown from 'react-markdown';
 import { Link, useSearchParams } from 'react-router-dom';
 import { getTitleFromMarkdown } from '../../utils/getMarkdownTitle';
 import { kebabCase } from 'lodash';
-import Test from './Test.md';
+import Blog1 from './Code-Coverage.md';
 
-const BLOGS = [Test];
+const BLOGS = [Blog1];
 
 export const Blogs = () => {
   const [searchParams] = useSearchParams();
